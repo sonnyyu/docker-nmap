@@ -4,6 +4,7 @@ git clone https://github.com/sonnyyu/docker-nmap
 cd docker-nmap
 docker build -t nmap .
 docker tag nmap sonnyyu/nmap
+docker tag nmap:latest  sonnyyu/nmap:7.92
 docker push sonnyyu/nmap
 ```
 # Grab it from dockerhub:
