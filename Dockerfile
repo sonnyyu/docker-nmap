@@ -1,4 +1,5 @@
-FROM alpine:3.9
+ARG ALPINE_TAG=latest
+FROM alpine:${ALPINE_TAG}
 MAINTAINER Sonny Yu <sonnyyuirm@gmail.com>
 
 # build initial cache | install binary | remove cache
