@@ -21,4 +21,8 @@ docker run -it --rm sonnyyu/nmap:7.92 -V
 docker run -it --rm sonnyyu/nmap:7.92 -A scanme.nmap.org
 docker run -it --rm sonnyyu/nmap:7.92 -sT -T4 scanme.nmap.org
 docker run -it --rm sonnyyu/nmap:7.92 -oA scan -A scanme.nmap.org
+docker run -it --rm sonnyyu/nmap:7.92 --script-updatedb
+docker run -it --rm sonnyyu/nmap:7.92  -p 445 --script smb-os-discovery  192.168.1.71
+docker run -it --rm sonnyyu/nmap:7.92 -p445 --script smb-vuln-ms08-067 192.168.1.71
+docker run -it --rm sonnyyu/nmap:7.92 --script ssh-brute.nse 192.168.1.204
 ```
