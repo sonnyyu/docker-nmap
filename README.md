@@ -9,11 +9,11 @@ docker push sonnyyu/nmap
 ```
 # Grab it from dockerhub:
 ```bash
-docker pull sonnyyu/nmap
+docker pull sonnyyu/nmap:7.92
 ```
 # Test it:
 ```bash
-docker run -it --rm sonnyyu/nmap --help
+docker run -it --rm sonnyyu/nmap:7.92 --help
 ```
 # Use it with:
 ```bash
