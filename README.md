@@ -18,5 +18,7 @@ docker run -it --rm sonnyyu/nmap:7.92 -V
 ```
 # Use it with:
 ```bash
-docker run -it --rm sonnyyu/nmap -A 10.145.88.192
+docker run -it --rm sonnyyu/nmap:7.92 -A scanme.nmap.org
+docker run -it --rm sonnyyu/nmap:7.92 -sT -T4 scanme.nmap.org
+docker run -it --rm sonnyyu/nmap:7.92 -oA scan -A scanme.nmap.org
 ```
