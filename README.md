@@ -5,6 +5,7 @@ cd docker-nmap
 docker build -t nmap .
 docker tag nmap sonnyyu/nmap
 docker tag nmap:latest  sonnyyu/nmap:7.92
+#docker login
 docker push sonnyyu/nmap
 ```
 # Grab it from dockerhub:
