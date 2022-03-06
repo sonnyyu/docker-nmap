@@ -1,24 +1,20 @@
-Build it:
-
+# Build it:
+```bash
 git clone https://github.com/sonnyyu/docker-nmap
-
 cd docker-nmap
-
 docker build -t nmap .
-
-docker tag f6c00ea7aef7 sonnyyu/nmap
-
-docker push sonnyyu/sqlmap
-
-
-Grab it from dockerhub:
-
+docker tag nmap sonnyyu/nmap
+docker push sonnyyu/nmap
+```
+# Grab it from dockerhub:
+```bash
 docker pull sonnyyu/nmap
-
-Test it:
-
+```
+# Test it:
+```bash
 docker run -it --rm sonnyyu/nmap --help
-
-Use it with:
-
+```
+# Use it with:
+```bash
 docker run -it --rm sonnyyu/nmap -A 10.145.88.192
+```
