@@ -14,6 +14,7 @@ docker pull sonnyyu/nmap:7.92
 # Test it:
 ```bash
 docker run -it --rm sonnyyu/nmap:7.92 --help
+docker run -it --rm sonnyyu/nmap:7.92 -V
 ```
 # Use it with:
 ```bash
